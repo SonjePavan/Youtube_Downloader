@@ -5,9 +5,6 @@ yt=YouTube(link)
 
 videos=yt.streams.filter(progressive=True, file_extension='mp4')
 
-# print(*videos,sep="\n")
-
-
 i=1
 for stream in videos:
     # if (stream.is_progressive ==True):
@@ -17,7 +14,7 @@ for stream in videos:
 choice=int(input("Select Your Choice :"))
 video=videos[choice-1]
 print("Download Started")
-video.download("E://")
+video.download("E://") 
 print("Downloaded")
 
 
